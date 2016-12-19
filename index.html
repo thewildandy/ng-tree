@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app="tree">
+  <head>
+    <title>Treeeee!</title>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="tree.js"></script>
+
+    <link rel="stylesheet" href="./tree.css"/>
+  </head>
+  <body>
+
+    <div class="tree" ng-controller="TreeCtrl">
+      <div class="tier" ng-repeat="tier in tree">
+        <div class="row" ng-repeat="row in tier">
+          <div class="node" ng-repeat="node in row"></div>
+        </div>
+      </div>
+    </div>
+
+    <script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.5'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+html, body {
+  height: 100%; }
+
+.tree {
+  margin-top: 120px; }
+  .tree .tier {
+    margin-left: 20px;
+    text-align: center; }
+  .tree .row {
+    float: right;
+    position: relative;
+    left: -50%;
+    clear: both; }
+  .tree .node {
+    position: relative;
+    left: 50%;
+    float: left;
+    margin-left: -20px;
+    height: 0;
+    width: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid green; }
+    .tree .node:nth-child(2n) {
+      border-top: 40px solid #009a00;
+      border-bottom: 0; }
